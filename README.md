@@ -34,3 +34,6 @@ pluginbuilder3
 
 - En el caso de no reflejar los cambios. Validar la carpeta publicada del plugin con el ambiente de desarrollo.
 Copying help/build/html to C:/Users/heber/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins\acceso_sistema
+
+- Libro.
+https://docs.qgis.org/3.22/pdf/es/QGIS-3.22-PyQGISDeveloperCookbook-es.pdf
