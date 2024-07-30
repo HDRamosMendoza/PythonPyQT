@@ -1,0 +1,77 @@
+#cargamos los paquetes necesarios
+from PyQt4.QtGui import *
+from PyQt4.QtCore import *
+import MapComposer
+
+#cargamos el archivo al lienzo
+lyr = QgsVectorLayer("Ciudad_de_Ayacucho.shp", "Ciudad de Ayacucho", "ogr")
+reg = QgsMapLayerRegistry.instance()
+reg.addMapLayer(lyr)
+
+#generamos un disenador de impresion
+mr = iface.mapCanvas().mapRenderer()
+qc = MapComposer.MapComposer(qmlr=reg, qmr=mr)
+
+#estilos del titulo del mapa
+qc.label = QgsComposerLabel(qc.c)
+qc.label.setText("Mapa de Ayacucho")
+f = QFont()
+f.setBold(True)
+f.setFamily("Arial")
+f.setPointSize(25)
+qc.label.setFont(f)
+qc.label.adjustSizeToText()
+qc.label.setFrameEnabled(True)
+qc.label.setItemPosition(20,20)
+qc.c.addItem(qc.label)
+
+#estilos de la leyenda del mapa
+qc.legend = QgsComposerLegend(qc.c)
+qc.legend.model().setLayerSet(qc.qmr.layerSet())
+qc.legend.setItemPosition(20, 90)
+qc.c.addItem(qc.legend)
+
+#estilos de grillado
+setGridAnnoPos = qc.composerMap.setGridAnnotationPosition
+setGridAnnoDir = qc.composerMap.setGridAnnotationDirection
+qcm = QgsComposerMap
+qc.composerMap.setGridEnabled(True)
+qc.composerMap.setGridIntervalX(.01)
+qc.composerMap.setGridIntervalY(.01)
+qc.composerMap.setGridStyle(qcm.Solid)
+qc.composerMap.setShowGridAnnotation(True)
+qc.composerMap.setGridAnnotationPrecision(2)
+setGridAnnoPos(qcm.OutsideMapFrame, qcm.Top)
+setGridAnnoDir(qcm.Horizontal, qcm.Top)
+setGridAnnoPos(qcm.OutsideMapFrame, qcm.Bottom)
+setGridAnnoDir(qcm.Horizontal, qcm.Bottom)
+setGridAnnoPos(qcm.OutsideMapFrame, qcm.Left)
+setGridAnnoDir(qcm.Vertical, qcm.Left)
+setGridAnnoPos(qcm.OutsideMapFrame, qcm.Right)
+setGridAnnoDir(qcm.Vertical, qcm.Right)
+qc.composerMap.setAnnotationFrameDistance(1)
+qc.composerMap.setGridPenWidth(.2)
+qc.composerMap.setGridPenColor(QColor(0, 0, 0))
+qc.composerMap.setAnnotationFontColor(QColor(0, 0, 0))
+qc.c.addComposerMap(qc.composerMap)
+
+
+#definimos barra de escala
+qc.scalebar = QgsComposerScaleBar(qc.c)
+qc.scalebar.setStyle('Single Box')
+qc.scalebar.setComposerMap(qc.composerMap)
+qc.scalebar.applyDefaultSize()
+sbw = qc.scalebar.rect().width()
+sbh = qc.scalebar.rect().height()
+mcw = qc.composerMap.rect().width()
+mch = qc.composerMap.rect().height()
+sbx = qc.x + (mcw - sbw)
+sby = qc.y + mch
+qc.scalebar.setItemPosition(15, 175)
+qc.c.addItem(qc.scalebar)
+
+
+#definimos grafico de salida
+qc.output("Ciudad_de_Ayacucho.png", "png")
+
+
