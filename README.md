@@ -35,5 +35,28 @@ pluginbuilder3
 - En el caso de no reflejar los cambios. Validar la carpeta publicada del plugin con el ambiente de desarrollo.
 Copying help/build/html to C:/Users/heber/AppData/Roaming/QGIS/QGIS3/profiles/default/python/plugins\acceso_sistema
 
+- Para exportar las carpetas personalizadas al usar pb_tool deploy. Se agrega ui e images que son carpetas que tienen diversos archivos.
+extra_dirs: ui images
+
 - Libro.
 https://docs.qgis.org/3.22/pdf/es/QGIS-3.22-PyQGISDeveloperCookbook-es.pdf
+
+- Python de QGIS. Al abrir la consola de QGIS no se tiene pip.
+Para instalar pip en el python de QGIS. Se debe de instalar por subprocesos.
+
+1. Instalar pip
+	import subprocess
+	subprocess.run(['python', 'get-pip.py'])
+	subprocess.run(['pip', '--version'])
+
+2. Instalar ezdxf
+	import subprocess
+	subprocess.run(['pip', 'install', 'ezdxf'])
+
+	import ezdxf
+	print(ezdxf.__version__)
+
+3. Instalar y actualizar numpy
+	import subprocess
+	subprocess.run(['pip', 'install', '--upgrade', 'numpy'])
+
