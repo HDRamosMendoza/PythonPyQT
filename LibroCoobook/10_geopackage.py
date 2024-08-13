@@ -25,12 +25,8 @@ from PyQt5.QtCore import QVariant
 base_directory = Path("C:\Workspace_PyQt\PythonPyQT")
 path_temp      = base_directory.joinpath("LibroCoobook", "0_data","Acuifero.shp")
 path_geopackge = base_directory.joinpath("LibroCoobook", "0_package","my_new_file.gpkg")
-print(path_temp)
+
 layer = QgsVectorLayer(str(path_temp), "shp_temp","ogr")
-
-schema = QgsFields()
-schema.append(QgsField('id', QVariant.Int))
-
 save_options = QgsVectorFileWriter.SaveVectorOptions()
 save_options.layerName = "Acuifero_temp"
 transform_context = QgsProject.instance().transformContext()
