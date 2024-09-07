@@ -1,0 +1,22 @@
+// Json para el uso de Interfaz general => Change Stylesheet
+
+* {
+    border: none;
+    background-color: transparent;
+}
+#centralwidget {
+    background-color: #040f13;
+}
+#side_menu {
+    background-color: #071e26;
+    border-radius: 20px;
+}
+QPushButton {
+    padding: 10px;
+    background-color: #040f13;
+    border-radius: 5px;
+}
+#main_body {
+    background-color: #071e26;
+    border-radius: 10px;
+}

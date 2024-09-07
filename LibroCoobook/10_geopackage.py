@@ -30,6 +30,7 @@ layer = QgsVectorLayer(str(path_temp), "shp_temp","ogr") # VectorLayers
 #QgsProject.instance().addMapLayer(layer)
 save_options = QgsVectorFileWriter.SaveVectorOptions()
 save_options.layerName = "Acuifero_temp" # Nuevo nombre de SHP
+save_options.fileEncoding = 'UTF-8'
 transform_context = QgsProject.instance().transformContext()
 
 fw = QgsVectorFileWriter.writeAsVectorFormatV3(

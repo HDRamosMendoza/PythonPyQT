@@ -1,4 +1,3 @@
-
 import sys, os, ezdxf
 from pathlib import Path
 from pyproj import CRS, Transformer

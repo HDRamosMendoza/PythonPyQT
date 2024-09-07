@@ -44,7 +44,6 @@ def convert_dwg_to_dxf(input_folder, output_folder, output_version="ACAD2018"):
     except Exception as e:
         print(f"Error al ejecutar ODAFileConverter: {e}")
 
-
 input_folder = os.path.join(os.getcwd(), "LibroCoobook", "0_data")
 output_folder = os.path.join(os.getcwd(), "LibroCoobook", "0_temp")
 

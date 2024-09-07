@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="040105_VEREDA" id="040105_VEREDA">
+	<SimpleField name="Layer" type="string"></SimpleField>
+	<SimpleField name="PaperSpace" type="int"></SimpleField>
+	<SimpleField name="SubClasses" type="string"></SimpleField>
+	<SimpleField name="Linetype" type="string"></SimpleField>
+	<SimpleField name="EntityHandle" type="string"></SimpleField>
+	<SimpleField name="Text" type="string"></SimpleField>
+</Schema>
+<Folder><name>040105_VEREDA</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">8B</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6336367287537,-5.17202343483482,0 -74.633633156098,-5.17200978626929,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">8D</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.633633156098,-5.17200978626929,0 -74.6336367980776,-5.17200523027693,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">8E</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6336367980776,-5.17200523027693,0 -74.6336495389834,-5.17200049733039,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">8F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6336495389834,-5.17200049733039,0 -74.6336662786207,-5.17200397111177,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">90</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6336662786207,-5.17200397111177,0 -74.633668138419,-5.1720090063681,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">91</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.633668138419,-5.1720090063681,0 -74.6337841283629,-5.17236904444401,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">92</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6337841283629,-5.17236904444401,0 -74.6337993381373,-5.17236538171633,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">93</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6337993381373,-5.17236538171633,0 -74.6338014900939,-5.17237732736364,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">94</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6338014900939,-5.17237732736364,0 -74.6338014798607,-5.17239513280183,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">95</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6338014798607,-5.17239513280183,0 -74.6337970273497,-5.17241200839135,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">96</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6337970273497,-5.17241200839135,0 -74.6337851754802,-5.17241923495824,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">97</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6337851754802,-5.17241923495824,0 -74.6337635127737,-5.17242552857425,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">98</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6337635127737,-5.17242552857425,0 -74.6337604189185,-5.17240865306684,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">99</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6337604189185,-5.17240865306684,0 -74.6318760340129,-5.17300889146596,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">9A</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6318760340129,-5.17300889146596,0 -74.6318811725961,-5.17302572786483,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">9B</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6318811725961,-5.17302572786483,0 -74.6318661864811,-5.17302870114951,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">9C</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6318661864811,-5.17302870114951,0 -74.6318519217281,-5.17302632781202,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">9D</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6318519217281,-5.17302632781202,0 -74.6318352998001,-5.17301829750089,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">9E</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6318352998001,-5.17301829750089,0 -74.6318223921865,-5.17300618645776,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">9F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6318223921865,-5.17300618645776,0 -74.6318138331503,-5.17299198577282,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">A0</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6318138331503,-5.17299198577282,0 -74.631809394698,-5.17297514632451,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">A1</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.631809394698,-5.17297514632451,0 -74.6318194419493,-5.17297314807793,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">A2</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6318194419493,-5.17297314807793,0 -74.6317264928975,-5.17266253827154,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">A3</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6317264928975,-5.17266253827154,0 -74.6317121160934,-5.17266493045046,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">A4</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6317121160934,-5.17266493045046,0 -74.6317110327353,-5.17265504026204,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">A5</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6317110327353,-5.17265504026204,0 -74.6317110401954,-5.17264213405291,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">A6</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6317110401954,-5.17264213405291,0 -74.6317157417141,-5.17262912123648,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">A7</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6317157417141,-5.17262912123648,0 -74.6317233932534,-5.17261576144079,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">A8</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6317233932534,-5.17261576144079,0 -74.6317349675973,-5.17261084631396,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">A9</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6317349675973,-5.17261084631396,0 -74.6317385689867,-5.17262626235153,0</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#040105_VEREDA">
+		<SimpleData name="Layer">040105_VEREDA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbLine</SimpleData>
+		<SimpleData name="EntityHandle">AA</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>-74.6317385689867,-5.17262626235153,0 -74.6336367287537,-5.17202343483482,0</coordinates></LineString>
+  </Placemark>
+</Folder>
+</Document></kml>

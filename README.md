@@ -60,3 +60,5 @@ Para instalar pip en el python de QGIS. Se debe de instalar por subprocesos.
 	import subprocess
 	subprocess.run(['pip', 'install', '--upgrade', 'numpy'])
 
+import pip, subprocess 
+subprocess.run(['pip', 'install', 'QT-PyQt-PySide-Custom-Widgets'])

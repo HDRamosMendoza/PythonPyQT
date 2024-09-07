@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="NOMENCLATURA" id="NOMENCLATURA">
+	<SimpleField name="Layer" type="string"></SimpleField>
+	<SimpleField name="PaperSpace" type="int"></SimpleField>
+	<SimpleField name="SubClasses" type="string"></SimpleField>
+	<SimpleField name="Linetype" type="string"></SimpleField>
+	<SimpleField name="EntityHandle" type="string"></SimpleField>
+	<SimpleField name="Text" type="string"></SimpleField>
+</Schema>
+<Folder><name>NOMENCLATURA</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NOMENCLATURA">
+		<SimpleData name="Layer">NOMENCLATURA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbText:AcDbText</SimpleData>
+		<SimpleData name="Linetype">Continuous</SimpleData>
+		<SimpleData name="EntityHandle">EA</SimpleData>
+		<SimpleData name="Text">AV. LAS PALMERAS</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.6329576976347,-5.1727975612924,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NOMENCLATURA">
+		<SimpleData name="Layer">NOMENCLATURA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbText:AcDbText</SimpleData>
+		<SimpleData name="Linetype">Continuous</SimpleData>
+		<SimpleData name="EntityHandle">ED</SimpleData>
+		<SimpleData name="Text">CA. LOS PINOS</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.6328052108499,-5.17224367991048,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#NOMENCLATURA">
+		<SimpleData name="Layer">NOMENCLATURA</SimpleData>
+		<SimpleData name="SubClasses">AcDbEntity:AcDbText:AcDbText</SimpleData>
+		<SimpleData name="Linetype">Continuous</SimpleData>
+		<SimpleData name="EntityHandle">EE</SimpleData>
+		<SimpleData name="Text">AV. LAS PALMERAS</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-74.6329576976347,-5.1727975612924,0</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

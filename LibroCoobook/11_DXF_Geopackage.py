@@ -9,6 +9,8 @@ from qgis.core import (
     QgsFields,
     QgsVectorLayer,
     QgsCoordinateReferenceSystem,
+    QgsCoordinateTransformContext,
+    QgsCoordinateTransform,
     QgsProject,
     QgsVectorFileWriter,    
     QgsFeature,
@@ -34,7 +36,7 @@ input_CRS = QgsCoordinateReferenceSystem('EPSG:32718')
 # Load files extension
 input_list_files_extension = [
     { 
-        "format": "kml"
+        "format": "KML"
         , "extension": "kml"
         , "download": ""
     }, {
@@ -42,11 +44,11 @@ input_list_files_extension = [
         , "extension": "shp"
         , "download": ""
     }, { 
-        "format": "geojson"
+        "format": "GeoJSON"
         , "extension": "geojson"
         , "download": ""
     }, { 
-        "format": "dxf"
+        "format": "DXF"
         , "extension": "dxf"
         , "download": ""
     }
@@ -156,7 +158,7 @@ def delete_files(folder_export):
         for file_path in direcotory_export.iterdir():
             if file_path.is_file():
                 file_path.unlink()
-                print(f"archivo eliminado: {file_path}")
+                #print(f"archivo eliminado: {file_path}")
     except Exception as e:
         print(f"{e}")
 
@@ -180,55 +182,58 @@ def import_files(file_path):
         if not layer.isValid():
             print('Capa no válida.')
         else:
-            print("Procesar capa")
             for item_file in input_list_files_extension:
                 list_lyr = []
+                list_fileWriter = []
                 # Delete files
                 delete_files(item_file['extension'])                
-                # Validate
-                existing_layers = {item["layer"] for item in list_lyr}
-                # Iterar sobre las características (features) de la capa
+                # Crear los objetos por tipo
                 for feature in layer.getFeatures():
-                    if feature['LAYER'] not in existing_layers:
+                    if feature['LAYER'] not in list_lyr:
+                        # Obtener el tipo de geometría
+                        geom_type = layer.geometryType()
+                        list_lyr.append(feature['LAYER'])
                         file_name   = f"{feature['LAYER']}.{item_file['extension']}"
                         folder_name = get_folder(item_file['extension'], file_name)
+                        crs_32718 = QgsCoordinateReferenceSystem('epsg:32718')
+                        #transform_context = QgsProject.instance().transformContext()
+                        save_options = QgsVectorFileWriter.SaveVectorOptions()
+                        save_options.driverName = item_file['format']
+                        save_options.fileEncoding = "UTF-8"
+                        save_options.crs = QgsCoordinateReferenceSystem.fromEpsgId(32718)
+                        #save_options.ct = QgsCoordinateTransform(layer.crs(), QgsCoordinateReferenceSystem('EPSG:4326'), QgsProject.instance())  # Transformación CRS si es necesario
                         # Create file
-                        writer = QgsVectorFileWriter(
+                        lyr_vector = QgsVectorFileWriter.create(
                             folder_name
-                            , 'UTF-8'
                             , layer.fields()
                             , layer.wkbType()
-                            , input_CRS
-                            , item_file['format']
+                            , crs_32718
+                            , QgsCoordinateTransformContext()
+                            , save_options
                         )
+
                         # Add list
-                        list_lyr.append({
+                        list_fileWriter.append({
                             "lyr" : feature['LAYER']
-                            , "vfw": writer
+                            , "type": str(geom_type)
+                            , "vfw": lyr_vector
                         })
-                        
-                # Imprimir los nombres de las capas
-                for lyr_name in list_lyr:
-                    # Iterar sobre las características (features) de la capa
+
+                # Guardar datos de las capas
+                for lyr_name in list_fileWriter:
                     for feature in layer.getFeatures():
                         #print(feature['LAYER'])                    
-                        if(feature['LAYER'] == lyr_name["lyr"]):
-                            # Obtener atributos
-                            # attrs = feature.attributes()
-                            # attrs es una lista. Contiene todos los valores de los atributos de esta función
+                        if(feature['Layer'] == lyr_name["lyr"]):
+                            # Obtener atributos: attrs = feature.attributes()
                             lyr_name["vfw"].addFeature(feature)
-                
+            
                 item_file['download'] = get_folder(
                     item_file['extension']
                     , f"{item_file['extension']}_{get_compress_name()}.zip"
                 )
 
-                compress_files(
-                    get_folder(item_file['extension'])
-                    , item_file['download']
-                )
+                compress_files(get_folder(item_file['extension']), item_file['download'])
 
-                del list_lyr
     except Exception as e:
         print(f"{e}")
         #QMessageBox.critical(self, "Error", f"Error al leer el archivo DXF: {str(e)}")
@@ -247,6 +252,17 @@ def list_files(folder_path):
     return listFile
 
 def main():    
+    """
+    # Obtener y listar los drivers soportados
+    drivers = QgsVectorFileWriter.ogrDriverList()
+    print("Drivers soportados:")
+    for driver in drivers:
+        print(driver.driverName)
+    """
+    #print(QgsWkbTypes.Point)
+    #print(QgsWkbTypes.Polygon)
+    #print(QgsWkbTypes.Line)
+
     # Create folder TEMP
     delete_files(FOLDER_NAME_TEMP)
 
